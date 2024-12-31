@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mccourse",
+	"version": "${version}",
+	"name": "MC Course Mod",
+	"description": "Testing diffrent things from the MC Cource",
+	"authors": [
+		"Blasty6000"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mccourse/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ivan.mccourse.MCCourseMod"
+		],
+		"fabric-datagen": [
+			"net.ivan.mccourse.MCCourseModDataGenerator"
+		],
+		"client": [
+			"net.ivan.mccourse.MCCourseModClient"
+		]
+	},
+	"mixins": [
+		"mccourse.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
